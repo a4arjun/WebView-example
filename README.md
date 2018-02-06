@@ -224,8 +224,8 @@ By clicking the link, the MainActivity will be called and the page will be reloa
 Now we are up to set our AndroidManifest file.
 
 ```xml
-	<uses-permission
-		android:name="android.permission.INTERNET"/>
+<uses-permission 
+	android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
