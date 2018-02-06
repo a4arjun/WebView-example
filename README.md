@@ -3,7 +3,7 @@
 In this tutorial, I'm going to tell you how to create a simple android webview app which has a splash screen, error page and an exit confirmation
 
 In MainActivity,
-
+<code>
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -99,7 +99,7 @@ public class MainActivity extends Activity {
 	}
 
 }
-
+</code>
 That's it.
 
 
