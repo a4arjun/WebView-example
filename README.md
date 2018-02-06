@@ -4,8 +4,7 @@ In this tutorial, I'm going to tell you how to create a simple android webview a
 
 In MainActivity,
 
-
-'''java
+```java
 
 import android.app.Activity;
 import android.content.Intent;
@@ -100,7 +99,7 @@ public class MainActivity extends Activity {
 	}
 
 }
-'''
+```
 That's it.
 
 
@@ -108,6 +107,7 @@ That's it.
 
 Now we need to create a flash screen. Create new file as Splash.java. Use the code below.
 
+```java
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -152,12 +152,13 @@ public class Splash extends Activity {
     }
 
 }
-
+```
 
 We are done creating flash screen. 
 
 Now, we have to create layout files. In your activity_main.xml, paste the code below.
 
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
@@ -191,11 +192,11 @@ Now, we have to create layout files. In your activity_main.xml, paste the code b
     
 </LinearLayout>
 
-
+```
 
 
 Now, we are ready to create a layout for splashscreen. For that, create a new layout file and name it activity_splash.xml. You can use the code below.
-
+```xml
 <RelativeLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
@@ -205,16 +206,16 @@ Now, we are ready to create a layout for splashscreen. For that, create a new la
 	tools:context=".Splash">
 
 </RelativeLayout>
-
+```
 You need to place your splashscreen image in drawable folder. That image will be loaded when the app is started and closes after page loads.
 
 
 
 
 We need an error page (404) to be loaded if there are no signs of internet connection. We are going to load the error page from android asset folder. Check MainActivity.jva to see how I linked to error page. in your error page, we need to add a reload or refresh button. for that, simply add this code in your 404 page.
-
+```html
 <a href="request://reload" class="btn">RELOAD</a>
-
+```
 By clicking the link, the MainActivity will be called and the page will be reloaded.
 
 
@@ -222,7 +223,7 @@ By clicking the link, the MainActivity will be called and the page will be reloa
 
 Now we are up to set our AndroidManifest file.
 
-
+```xml
 	<uses-permission
 		android:name="android.permission.INTERNET"/>
     <application
@@ -240,7 +241,7 @@ Now we are up to set our AndroidManifest file.
             </intent-filter>
         </activity>
     </application>
-
+```
 You have to add this code in AndroidManifest file. Now compile the app. You are done.
 
 
